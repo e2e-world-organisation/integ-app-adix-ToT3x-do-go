@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-nyfh
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/quay-or-not-to-quay/nbe-e2e-umdf-tenant/integ-app-adix/hacbs-test-project-nyfh@sha256:314df63f633732f8857fe9afc78709a94677211abc7f692f904a04fe4d434e52
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
